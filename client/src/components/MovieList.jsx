@@ -5,13 +5,17 @@ var MovieList = React.createClass({
 
     render: function() {
 
+        var movies = this.props.data.map(function(movie) {
+            return (
+                <Movie title={movie.title} apiKey={movie.id} key={movie.id}/>
+            );
+        })
+
         return (
 
-            <div className="comment-list">
+            <div className="movie-list">
 
-                <Movie/>
-                <Movie/>
-                <Movie/>
+                {movies}
 
             </div>
 

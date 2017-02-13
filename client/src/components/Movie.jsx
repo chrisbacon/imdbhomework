@@ -6,11 +6,11 @@ var Movie = React.createClass({
 
         return (
 
-            <div className="comment">
+            <div className="movie">
 
-                <span>Movie Title</span>
+                <span>{this.props.title}</span>
 
-                <a>Showtime</a>
+                <a href={"http://imdb.com/fakeapi/showtimes/movie/"+ this.props.apiKey}>Showtime</a>
 
             </div>
 
