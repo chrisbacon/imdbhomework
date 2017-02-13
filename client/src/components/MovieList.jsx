@@ -1,4 +1,5 @@
 var React = require('react');
+var Movie = require('./movie');
 
 var MovieList = React.createClass({
 
@@ -8,14 +9,15 @@ var MovieList = React.createClass({
 
             <div className="comment-list">
 
-                <p>Movie List</p>
+                <Movie/>
+                <Movie/>
+                <Movie/>
 
             </div>
 
         );
 
     }
-
 
 });
 
