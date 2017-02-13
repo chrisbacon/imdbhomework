@@ -1,12 +1,13 @@
 var React = require('react');
+var MovieList = require('./MovieList')
 
-var MovieBox = Reach.createClass({
+var MovieBox = React.createClass({
 
     render: function() {
 
         return (
 
-            <div className="movie-box">
+            <div className="comment-box">
 
                 <MovieList/>
 
@@ -21,3 +22,5 @@ var MovieBox = Reach.createClass({
     }
 
 });
+
+module.exports = MovieBox;
